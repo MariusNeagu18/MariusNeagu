@@ -15,7 +15,7 @@ public class Java9NeaguMarius {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Salut distinsi colegi! ");
+        System.out.println("Salut distinsi colegi!");
     }
     
 }
