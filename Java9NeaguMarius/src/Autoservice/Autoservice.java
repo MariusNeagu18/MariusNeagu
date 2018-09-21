@@ -35,7 +35,7 @@ public class Autoservice {
         obj.displayAutoservice(v1, v2, v3);
     }
     
-     public void displayAutoservice(Car parametru1, Car parametru2, Car parametru3){
+     private void displayAutoservice(Car parametru1, Car parametru2, Car parametru3){
             System.out.println("The available cars are:");
          
             System.out.println("");
