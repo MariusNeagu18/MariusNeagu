@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Autoservice;
 
 /**
@@ -43,8 +39,7 @@ public class Car implements Rentable, Saleable {
     public int getSalePrice() {
         return (salePrice);
     }
-    
-    
+   
     public void increaseSpeed(int increaseSpeedValue){
         speed = speed + increaseSpeedValue;
     }
