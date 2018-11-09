@@ -31,6 +31,29 @@ public class Car implements Rentable, Saleable {
     public int getSpeed() {
         return (speed);
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void setRentingPrice(int rentingPrice) {
+        this.rentingPrice = rentingPrice;
+    }
+
+    public void setSalePrice(int salePrice) {
+        this.salePrice = salePrice;
+    }
+    
+    
+    
     @Override
     public int getRentingPrice() {
         return (rentingPrice);
