@@ -1,5 +1,5 @@
 /*
- * Test Dreptunghi
+ * Test Class for Dreptunghi
  */
 package tdd;
 
