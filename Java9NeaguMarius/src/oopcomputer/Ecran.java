@@ -50,7 +50,7 @@ public class Ecran {
                 if (0 == operandUnu || ' ' == stapana.getAlu().getOperator()) {
                     stapana.getAlu().setOperandUnu(afisajInt);
                     System.out.println(Integer.parseInt(afisaj));
-                } else if (0 == operandDoi || stapana.getAlu().getOperator() != '=') {
+                } else if (0 == operandDoi || '=' != stapana.getAlu().getOperator()) {
 
                     stapana.getAlu().setOperandDoi(afisajInt);
 
