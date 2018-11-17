@@ -25,6 +25,6 @@ public class TestCalculator {
         calculator.buton1.apasa();
         // Apasam butoane pana apare =
         calculator.butonEgal.apasa();
-        // afisam rezultatul
+        
     }
 }
