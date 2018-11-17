@@ -13,32 +13,17 @@ public class Buton {
     private Carcasa stapana;
 
     public Buton(Character noulSimbol) {
-        this.simbol = noulSimbol;
+        simbol = noulSimbol;
     }
 
     public Buton(Character noulSimbol, Carcasa nouaCarcasa) {
-        this.simbol = noulSimbol;
-        this.stapana = nouaCarcasa;
+        simbol = noulSimbol;
+        stapana = nouaCarcasa;
     }
-    //seters and getters
-    public Character getSimbol() {
-        return simbol;
-    }
-
-    public void setSimbol(Character simbol) {
-        this.simbol = simbol;
-    }
-
-    public Carcasa getStapana() {
-        return stapana;
-    }
-
-    public void setStapana(Carcasa stapana) {
-        this.stapana = stapana;
-    }
-
+    
+     // Metoda pentru apasarea butoanelor     
     public void apasa() {
-        System.out.println("A fost apasat " + simbol);
-        stapana.getEcran().setAfisaj(simbol.toString());
+        Ecran ecranTemporar = stapana.getEcran();
+        ecranTemporar.setAfisaj(simbol.toString());
     }
 }

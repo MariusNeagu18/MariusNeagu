@@ -16,16 +16,15 @@ public class TestCalculator {
         //creaza un calculator
         Carcasa calculator = new Carcasa();
         // Apasam butoane pana apare un operator
-        calculator.getButon1().apasa();
-        calculator.getButon2().apasa();
-        calculator.getButon3().apasa();
-        calculator.getButonPlus().apasa();
-        calculator.getButon3().apasa();
-        calculator.getButon2().apasa();
-        calculator.getButon1().apasa();
-        calculator.getButonEgal().apasa();
-
-        System.out.println("Rezultatul este: " + calculator.getAlu().getRezultat());
-
+        calculator.buton1.apasa();
+        calculator.buton2.apasa();
+        calculator.buton3.apasa();
+        calculator.butonPlus.apasa();
+        calculator.buton3.apasa();
+        calculator.buton2.apasa();
+        calculator.buton1.apasa();
+        // Apasam butoane pana apare =
+        calculator.butonEgal.apasa();
+        // afisam rezultatul
     }
 }
