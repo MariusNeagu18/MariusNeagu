@@ -12,6 +12,11 @@ public class Buton {
     private Character simbol;
     private Carcasa stapana;
 
+    public Character getSimbol() {
+        return simbol;
+    }
+
+
     public Buton(Character noulSimbol) {
         simbol = noulSimbol;
     }
