@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Manage User Page
+-->
+<html>
+    <head>
+        <title>eBooksStore_ManageUserPage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/eBooksStore.css">
+    </head>
+    <body>
+        <ul id="nav">
+            <li><a href="#">Manage</a>
+                <ul>
+                    <li><a href="eBooksStore_ManageUsersPage.html">Users</a></li>
+                    <li><a href="#">User roles</a></li>
+                    <li><a href="#">eBooks</a></li>                            
+                </ul>
+            </li>
+            <li><a href="#">Orders</a>
+                <ul>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">eBooks Inventory</a></li>
+                </ul>
+            </li>                          
+            <li><a href="eBooksStore_IndexPage.html">Log out</a></li>
+        </ul>
+        <table border="1" width="100%">
+            <tr>
+                <td width="4%" class="thc"> select </td>   
+                <td width="20%" class="thc">USERNAME</td>  
+                <td width="20%" class="thc">PASSWORD</td>
+                <td width="20%" class="thc">ROLE <input type="submit" name="admin_userroles_open" value="Admin"></td>
+            </tr>
+        </table>    
+        <table border="1" width="100%">    
+            <tr>
+                <td width="4%" class="tdc"><input type="checkbox" name="admin_users_checkbox" value="${row.ssn}"></td>
+                <td width="20%" class="tdc">admin</td>
+                <td width="20%" class="tdc">admin</td>
+                <td width="20%" class="tdc">admin</td>
+            </tr>
+            <tr>
+                <td width="4%" class="tdc"><input type="checkbox" name="admin_users_checkbox" value="${row.ssn}"></td>
+                <td width="20%" class="tdc">coco</td>
+                <td width="20%" class="tdc">marla</td>
+                <td width="20%" class="tdc">admin</td>
+            </tr>
+        </table>
+        <form>
+            <table class="tablecenterdwithborder">
+                <tr>
+                    <td>    
+                        <table>
+                            <tr>
+                                <td> Username </td>
+                                <td> <input type="text" name="admin_users_ssn"></td>
+                            </tr>                                        
+                            <tr>
+                                <td> Password </td>
+                                <td> <input type="password" name="admin_users_password"></td>
+                            </tr>
+                            <tr>
+                                <td> Role </td>
+                                <td>
+                                    <select name="admin_user_role">   
+                                        <option name="admin_users_roles" value="admin">admin</option>
+                                        <option name="admin_users_roles" value="user">user</option>
+                                    </select>
+                                </td>
+                            </tr>     
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr><td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_insert" value="Insert"></td> 
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_update" value="Update"></td>
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_delete" value="Delete"></td> 
+                                <td class="tdc"><input type="submit" class="ebooksstorebutton" name="admin_users_cancel" value="Cancel"></td>
+                            </tr>  
+                        </table>
+                    </td>
+                </tr>
+            </table>    
+        </form>
+    </body>
+</html>
