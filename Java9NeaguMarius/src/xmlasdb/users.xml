@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE users SYSTEM "users.dtd">
+<users>
+     <user>
+          <username>Pop Ana</username>
+          <password>iniana123</password>
+     </user>
+     <user>
+          <username>Popa Andra</username>
+          <password>iniandra123</password>
+     </user>
+     <user>
+          <username>Popa Andrei</username>
+          <password>iniandrei123</password>
+     </user>
+</users>
